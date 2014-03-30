@@ -28,6 +28,7 @@ set foldmethod=marker
 set wildmode=longest,list,full
 set wildmenu
 set nonumber
+set smartcase
 
 :map <F5> :setlocal spell! spelllang=en_us<cr> 
 :map <F6> :TlistToggle<cr>
@@ -58,3 +59,39 @@ autocmd BufRead *.vala,*.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 au BufRead,BufNewFile *.vala,*.vapi setfiletype vala
 
 let Tlist_Ctags_Cmd = "/usr/bin/ctags"
+
+filetype plugin on
+
+" make external keypad work in terminal vim OSX!
+map <Esc>Oq 1
+map <Esc>Or 2
+map <Esc>Os 3
+map <Esc>Ot 4
+map <Esc>Ou 5
+map <Esc>Ov 6
+map <Esc>Ow 7
+map <Esc>Ox 8
+map <Esc>Oy 9
+map <Esc>Op 0
+map <Esc>On .
+map <Esc>OQ /
+map <Esc>OR *
+map <kPlus> +
+map <Esc>OS -
+map <Esc>OM <CR>
+map! <Esc>Oq 1
+map! <Esc>Or 2
+map! <Esc>Os 3
+map! <Esc>Ot 4
+map! <Esc>Ou 5
+map! <Esc>Ov 6
+map! <Esc>Ow 7
+map! <Esc>Ox 8
+map! <Esc>Oy 9
+map! <Esc>Op 0
+map! <Esc>On .
+map! <Esc>OQ /
+map! <Esc>OR *
+map! <kPlus> +
+map! <Esc>OS -
+map! <Esc>OM <CR>
