@@ -3,6 +3,8 @@ set backupdir=~/vimtmp,.
 set directory=~/vimtmp,.
 set backspace=2 " make backspace work like most other apps
 "colorscheme wombat
+"colorscheme ir_black
+colorscheme vividchalk 
 "call pathogen#infect()
 
 "set background=dark
